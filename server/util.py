@@ -2,6 +2,7 @@ import json
 import pickle
 import pandas as pd
 import warnings
+import os
 
 # Ignore specific warning
 warnings.filterwarnings("ignore", message="InconsistentVersionWarning")
@@ -18,12 +19,20 @@ def load_saved_artifacts():
 
     if __data_columns is None:
         print("Loading saved artifacts...")
-        with open(r"D:\Machine_Learning\Projects\Real_estate\server\artifacts\columns.json", "r") as f:
+        # Get the current file's directory
+        current_dir = os.path.dirname(__file__)
+        # Construct relative path to the JSON file
+        json_file_path = os.path.join(current_dir, "artifacts", "columns.json")
+        with open(json_file_path, "r") as f:
             __data_columns = json.load(f)['data_columns']
             __location = __data_columns[3:]
 
     if __model is None:
-        with open(r"D:\Machine_Learning\Projects\Real_estate\server\artifacts\best_model.pkl", "rb") as f:
+        # Get the current file's directory
+        current_dir = os.path.dirname(__file__)
+        # Construct relative path to the pickle file
+        pickle_file_path = os.path.join(current_dir, "artifacts", "best_model.pkl")
+        with open(pickle_file_path, "rb") as f:
             __model = pickle.load(f)
 
 

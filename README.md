@@ -72,6 +72,12 @@ The project execution will involve the following steps:
 
 11. Deploy the website and Flask server on a suitable hosting platform to make it accessible to users.
 
+## Real Estate Price Prediction Web Application
+
+![Real Estate Price Prediction](https://drive.google.com/uc?id=1KhpSCoA6Nt_KIn1gOVtUYgzhJ-UR6vEa)
+
+This GIF showcases the Real Estate Price Prediction web application in action. Users can interact with the website and make predictions based on property features.
+
 ## Conclusion
 
 Embarking on this real estate price prediction project will provide you with valuable insights into the life of a data scientist working for a major real estate company. Throughout the project, you will encounter various challenges and learn essential data science concepts and techniques.

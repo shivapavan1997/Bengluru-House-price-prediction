@@ -1,0 +1,13 @@
+prefix=D:/Machine_Learning/Projects/Bengluru-House-price-prediction/venv/Library
+exec_prefix=D:/Machine_Learning/Projects/Bengluru-House-price-prediction/venv/Library
+libdir=D:/Machine_Learning/Projects/Bengluru-House-price-prediction/venv/Library/lib
+sharedlibdir=D:/Machine_Learning/Projects/Bengluru-House-price-prediction/venv/Library/lib
+includedir=D:/Machine_Learning/Projects/Bengluru-House-price-prediction/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
